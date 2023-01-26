@@ -13,11 +13,15 @@ class Dashboard extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
       ),
       backgroundColor: Colors.lightGreen,
-      body: const Center(
-        child: Icon(
-          Icons.alt_route_rounded,
-          size: 100,
+      body: Center(
+        child: IconButton(
+          icon: const Icon(
+            Icons.alt_route_rounded,
+          ),
+          iconSize: 100,
           color: Colors.lightGreenAccent,
+          splashColor: Colors.white,
+          onPressed: () { },
         ),
       ),
     );
