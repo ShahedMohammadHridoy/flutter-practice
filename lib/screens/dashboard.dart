@@ -17,7 +17,8 @@ class Dashboard extends StatelessWidget {
         alignment: Alignment.center,
         decoration: BoxDecoration(
             color: Colors.blueGrey,
-            borderRadius: BorderRadius.circular(10.0)
+            borderRadius: BorderRadius.circular(10.0),
+            border: Border.all(color: Colors.red, width: 6.0),
         ),
         child: const Text(
           "Hello World",
