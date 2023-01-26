@@ -9,20 +9,15 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Dashboard'.toUpperCase()),
-        backgroundColor: Colors.blueGrey,
-      ),
-      backgroundColor: Colors.white,
-      body: Center(
-        child: IconButton(
-          icon: const Icon(
-            FontAwesomeIcons.facebook
+      body:Container(
+        color: Colors.blueGrey,
+        child: const Text(
+          "Hello World",
+          style: TextStyle(
+            fontSize: 40,
+            fontWeight:
+            FontWeight.bold,
           ),
-          iconSize: 100,
-          color: Colors.blue,
-          splashColor: Colors.white24,
-          onPressed: () { },
         ),
       ),
     );
