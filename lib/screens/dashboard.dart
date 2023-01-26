@@ -13,15 +13,15 @@ class Dashboard extends StatelessWidget {
         title: Text('Dashboard'.toUpperCase()),
         backgroundColor: Colors.blueGrey,
       ),
-      backgroundColor: Colors.lightGreen,
+      backgroundColor: Colors.white,
       body: Center(
         child: IconButton(
           icon: const Icon(
             FontAwesomeIcons.facebook
           ),
           iconSize: 100,
-          color: Colors.red,
-          splashColor: Colors.amberAccent,
+          color: Colors.blue,
+          splashColor: Colors.white24,
           onPressed: () { },
         ),
       ),
