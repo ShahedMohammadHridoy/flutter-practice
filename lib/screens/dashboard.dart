@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -16,11 +17,11 @@ class Dashboard extends StatelessWidget {
       body: Center(
         child: IconButton(
           icon: const Icon(
-            Icons.alt_route_rounded,
+            FontAwesomeIcons.facebook
           ),
           iconSize: 100,
-          color: Colors.lightGreenAccent,
-          splashColor: Colors.white,
+          color: Colors.red,
+          splashColor: Colors.amberAccent,
           onPressed: () { },
         ),
       ),
