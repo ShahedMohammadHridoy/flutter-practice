@@ -16,9 +16,19 @@ class Dashboard extends StatelessWidget {
         margin: const EdgeInsets.all(20.0),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-            color: Colors.blueGrey,
-            borderRadius: BorderRadius.circular(10.0),
-            border: Border.all(color: Colors.red, width: 6.0),
+          color: Colors.blueGrey,
+          // borderRadius: BorderRadius.circular(10.0),
+          border: Border.all(color: Colors.red, width: 6.0),
+          shape: BoxShape.circle,
+          image: const DecorationImage(image: AssetImage("images/sample_image.jpg")),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade50,
+              blurRadius: 7,
+              spreadRadius: 5,
+              offset: const Offset(4,4),
+            )
+          ]
         ),
         child: const Text(
           "Hello World",
