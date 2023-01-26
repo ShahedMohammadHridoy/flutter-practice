@@ -11,6 +11,10 @@ class Dashboard extends StatelessWidget {
     return Scaffold(
       body:Container(
         color: Colors.blueGrey,
+        width: 350.0,
+        height: 250.0,
+        padding: const EdgeInsets.all(20.0),
+        margin: const EdgeInsets.all(20.0),
         child: const Text(
           "Hello World",
           style: TextStyle(
