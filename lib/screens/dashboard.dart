@@ -13,9 +13,7 @@ class Dashboard extends StatelessWidget {
         title: Text('Dashboard'.toUpperCase()),
         backgroundColor: Colors.blueGrey,
       ),
-      body: Center(
-        child: Text("Random Number is: ${getNumber()}")
-      ),
+      body: const Image(image: AssetImage("images/sample_image.jpg"),)
     );
   }
 }
