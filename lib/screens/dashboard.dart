@@ -15,6 +15,7 @@ class Dashboard extends StatelessWidget {
         height: 250.0,
         padding: const EdgeInsets.all(20.0),
         margin: const EdgeInsets.all(20.0),
+        alignment: Alignment.center,
         child: const Text(
           "Hello World",
           style: TextStyle(
