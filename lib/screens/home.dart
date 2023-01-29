@@ -10,10 +10,11 @@ class Home extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {},
           style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.black,
             padding: const EdgeInsets.all(20.0),
             elevation: 15,
-            backgroundColor: Colors.yellow,
+            side: const BorderSide(color: Colors.black, width: 2.0, style: BorderStyle.solid),
+            shadowColor: Colors.red,
+            backgroundColor: Colors.red,
             fixedSize: const Size(300, 80),
             textStyle: const TextStyle(
               fontSize: 25,
