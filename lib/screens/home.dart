@@ -7,21 +7,21 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ElevatedButton(
+        child: ElevatedButton.icon(
+          icon: const Icon(Icons.add),
           onPressed: () {},
           style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.red,
             padding: const EdgeInsets.all(20.0),
             elevation: 15,
             shape: const StadiumBorder(),
-            shadowColor: Colors.red,
-            backgroundColor: Colors.red,
             fixedSize: const Size(300, 80),
             textStyle: const TextStyle(
               fontSize: 25,
               fontWeight: FontWeight.bold,
             ),
           ),
-          child: const Text("Click Me"),
+          label: const Text("Add New"),
         ),
       ),
     );
