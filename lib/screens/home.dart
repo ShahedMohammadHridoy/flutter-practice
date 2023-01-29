@@ -12,8 +12,7 @@ class Home extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.all(20.0),
             elevation: 15,
-            side: const BorderSide(color: Colors.black, width: 2.0,),
-            alignment: Alignment.bottomLeft,
+            shape: const StadiumBorder(),
             shadowColor: Colors.red,
             backgroundColor: Colors.red,
             fixedSize: const Size(300, 80),
