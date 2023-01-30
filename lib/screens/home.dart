@@ -7,15 +7,11 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Directionality(
-            textDirection: TextDirection.rtl,
-            child: ElevatedButton.icon(
-              icon: const Icon(Icons.add),
-              onPressed: () {},
+        child: OutlinedButton(
+          onPressed: () {},
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
+                foregroundColor: Colors.black,
                 padding: const EdgeInsets.all(20.0),
-                elevation: 15,
                 shape: const StadiumBorder(),
                 fixedSize: const Size(300, 80),
                 textStyle: const TextStyle(
@@ -23,9 +19,14 @@ class Home extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              label: const Text("Add New"),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text("Let's Begin"),
+              Icon(Icons.add_shopping_cart_outlined)
+            ],
+          ),
             ),
-        )
       ),
     );
   }
