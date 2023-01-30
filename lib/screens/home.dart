@@ -7,10 +7,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: TextButton(
-          onPressed: () {},
+        child: ElevatedButton(
+          onPressed: null,
               style: ElevatedButton.styleFrom(
-                foregroundColor: Colors.black,
                 padding: const EdgeInsets.all(20.0),
                 shape: const StadiumBorder(),
                 fixedSize: const Size(300, 80),
