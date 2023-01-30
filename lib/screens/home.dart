@@ -8,24 +8,39 @@ class Home extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu),),
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.menu),
+        ),
         title: const Text("Tiger Park"),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart),),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.search),),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.shopping_cart),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.search),
+          ),
           // IconButton(onPressed: () {}, icon: const Icon(Icons.menu_book),),
         ],
         elevation: 0,
         titleSpacing: 40.0,
         centerTitle: true,
-        backgroundColor: Colors.purple.withOpacity(0.7),
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(
-              bottom: Radius.circular(15.0))
+        backgroundColor: Colors.purple,
+        flexibleSpace: const Image(
+          image: NetworkImage(
+              "https://images.pexels.com/photos/14680409/pexels-photo-14680409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+          fit: BoxFit.cover,
         ),
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(bottom: Radius.circular(15.0))),
       ),
       body: const Center(
-        child: Text("Shahed"),
+        child: Text(
+          "Shahed",
+          style: TextStyle(fontSize: 25, color: Colors.red),
+        ),
       ),
     );
   }
