@@ -9,8 +9,15 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu),),
         title: const Text("Tiger Park"),
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart),),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.search),),
+          // IconButton(onPressed: () {}, icon: const Icon(Icons.menu_book),),
+        ],
         elevation: 0,
+        titleSpacing: 40.0,
         centerTitle: true,
+        backgroundColor: Colors.purple,
       ),
       body: Center(
         child: ElevatedButton(
