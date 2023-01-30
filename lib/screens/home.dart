@@ -14,7 +14,8 @@ class Home extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.search),),
           IconButton(onPressed: () {}, icon: const Icon(Icons.menu_book),),
         ],
-        elevation: 20.0,
+        elevation: 0,
+        titleSpacing: 40.0,
       ),
       body: Center(
         child: ElevatedButton(
