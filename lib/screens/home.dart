@@ -18,6 +18,10 @@ class Home extends StatelessWidget {
         titleSpacing: 40.0,
         centerTitle: true,
         backgroundColor: Colors.purple.withOpacity(0.7),
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+              bottom: Radius.circular(15.0))
+        ),
       ),
       body: Center(
         child: ElevatedButton(
