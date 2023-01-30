@@ -7,12 +7,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.menu),
-        ),
+        leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu),),
         title: const Text("Tiger park"),
-
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart),),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.search),),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.menu_book),),
+        ],
       ),
       body: Center(
         child: ElevatedButton(
