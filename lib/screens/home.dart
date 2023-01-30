@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
         elevation: 0,
         titleSpacing: 40.0,
         centerTitle: true,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.purple.withOpacity(0.7),
       ),
       body: Center(
         child: ElevatedButton(
