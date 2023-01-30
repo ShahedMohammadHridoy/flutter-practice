@@ -8,12 +8,13 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu),),
-        title: const Text("Tiger park"),
+        title: const Text("Tiger Park"),
         actions: [
           IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart),),
           IconButton(onPressed: () {}, icon: const Icon(Icons.search),),
           IconButton(onPressed: () {}, icon: const Icon(Icons.menu_book),),
         ],
+        elevation: 20.0,
       ),
       body: Center(
         child: ElevatedButton(
