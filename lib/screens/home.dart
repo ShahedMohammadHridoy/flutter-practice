@@ -6,6 +6,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu),),
         title: const Text("Tiger Park"),
@@ -23,26 +24,8 @@ class Home extends StatelessWidget {
               bottom: Radius.circular(15.0))
         ),
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: null,
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.all(20.0),
-                shape: const StadiumBorder(),
-                fixedSize: const Size(300, 80),
-                textStyle: const TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text("Let's Begin"),
-              Icon(Icons.add_shopping_cart_outlined)
-            ],
-          ),
-            ),
+      body: const Center(
+        child: Text("Shahed"),
       ),
     );
   }
