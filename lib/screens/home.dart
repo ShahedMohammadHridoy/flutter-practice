@@ -6,6 +6,14 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.menu),
+        ),
+        title: const Text("Tiger park"),
+
+      ),
       body: Center(
         child: ElevatedButton(
           onPressed: null,
