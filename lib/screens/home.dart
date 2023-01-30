@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.purple,
         flexibleSpace: const Image(
           image: NetworkImage(
-              "https://images.pexels.com/photos/14680409/pexels-photo-14680409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+              "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&dl=milad-fakurian-nY14Fs8pxT8-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb"),
           fit: BoxFit.cover,
         ),
         shape: const RoundedRectangleBorder(
