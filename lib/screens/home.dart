@@ -51,6 +51,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   Expanded(
+                    flex: 2,
                     child: Image(
                       image: AssetImage(
                         "images/sample_image.jpg",
@@ -59,6 +60,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   Expanded(
+                    flex: 4,
                     child: Image(
                       image: AssetImage(
                         "images/sample_image.jpg",
