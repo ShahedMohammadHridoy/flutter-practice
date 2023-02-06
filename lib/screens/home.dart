@@ -38,46 +38,60 @@ class Home extends StatelessWidget {
         ),
         body: Container(
           color: Colors.red,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          child: Column(
             children: [
-              Column(
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Icon(
-                    Icons.phone,
-                    size: 35.0,
-                    color: Colors.white,
-                  ),
-                  Text(
-                    "Phone",
-                    style: TextStyle(color: Colors.white),
-                  )
+                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
+                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
+                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
+                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
+                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
                 ],
               ),
-              Column(
-                children: const [
-                  Icon(
-                    Icons.alt_route,
-                    size: 35.0,
-                    color: Colors.white,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Column(
+                    children: const [
+                      Icon(
+                        Icons.phone,
+                        size: 35.0,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        "Phone",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
                   ),
-                  Text(
-                    "Route",
-                    style: TextStyle(color: Colors.white),
-                  )
+                  Column(
+                    children: const [
+                      Icon(
+                        Icons.alt_route,
+                        size: 35.0,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        "Route",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                  Column(children: const [
+                    Icon(
+                      Icons.share,
+                      size: 35.0,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      "Share",
+                      style: TextStyle(color: Colors.white),
+                    )
+                  ]),
                 ],
               ),
-              Column(children: const [
-                Icon(
-                  Icons.share,
-                  size: 35.0,
-                  color: Colors.white,
-                ),
-                Text(
-                  "Share",
-                  style: TextStyle(color: Colors.white),
-                )
-              ]),
             ],
           ),
         ));
