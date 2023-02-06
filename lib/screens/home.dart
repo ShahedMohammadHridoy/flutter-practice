@@ -41,13 +41,61 @@ class Home extends StatelessWidget {
           child: Column(
             children: [
               Row(
+                children: const [
+                  Expanded(
+                    child: Image(
+                      image: AssetImage(
+                        "images/sample_image.jpg",
+                      ),
+                      width: 150,
+                    ),
+                  ),
+                  Expanded(
+                    child: Image(
+                      image: AssetImage(
+                        "images/sample_image.jpg",
+                      ),
+                      width: 150,
+                    ),
+                  ),
+                  Expanded(
+                    child: Image(
+                      image: AssetImage(
+                        "images/sample_image.jpg",
+                      ),
+                      width: 150,
+                    ),
+                  ),
+                ],
+              ),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
-                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
-                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
-                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
-                  Icon(Icons.star_border, size: 20.0, color: Colors.white,),
+                  Icon(
+                    Icons.star,
+                    size: 20.0,
+                    color: Colors.white,
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 20.0,
+                    color: Colors.white,
+                  ),
+                  Icon(
+                    Icons.star,
+                    size: 20.0,
+                    color: Colors.white,
+                  ),
+                  Icon(
+                    Icons.star_border,
+                    size: 20.0,
+                    color: Colors.white,
+                  ),
+                  Icon(
+                    Icons.star_border,
+                    size: 20.0,
+                    color: Colors.white,
+                  ),
                 ],
               ),
               Row(
