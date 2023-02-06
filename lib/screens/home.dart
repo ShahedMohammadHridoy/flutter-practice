@@ -6,7 +6,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
@@ -36,12 +35,18 @@ class Home extends StatelessWidget {
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(15.0))),
       ),
-      body: const Center(
-        child: Text(
-          "Shahed",
-          style: TextStyle(fontSize: 25, color: Colors.red),
+      body: Container(
+        color: Colors.red,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: const [
+            Icon(Icons.phone, size: 35.0, color: Colors.white, ),
+            Icon(Icons.alt_route, size: 35.0, color: Colors.white, ),
+            Icon(Icons.share, size: 35.0, color: Colors.white, ),
+          ],
         ),
-      ),
+      )
     );
   }
 }
